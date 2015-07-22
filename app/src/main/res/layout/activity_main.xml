@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/images"
+    android:focusable="false"
+    android:clickable="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Log In"
+        android:textColor="#ffff"
+        android:id="@+id/textView2"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:id="@+id/button"
+        android:textColor="#ffff"
+        android:background="#ff504dff"
+        android:width="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:textSize="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="52dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:textColor="#ffff"
+        android:id="@+id/button2"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:onClick="google.com"
+        android:background="#ffff2927"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sign Up"
+        android:textColor="#ffff"
+        android:linksClickable="true"
+        android:id="@+id/textView3"
+        android:layout_marginTop="59dp"
+        android:clickable="true"
+        android:backgroundTint="#bb516945"
+        android:focusable="false"
+        android:background="#e3161a4e"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Drinks Poster"
+        android:textColor="#ff7affea"
+        android:id="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:background="#28ff1100"
+        android:backgroundTint="#bb494841"
+        android:textSize="@dimen/abc_action_bar_progress_bar_size"
+        android:singleLine="true"
+        android:stateListAnimator="@color/accent_material_dark" />
+
+</RelativeLayout>
